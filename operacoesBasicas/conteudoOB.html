@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1014">
+<title>As Quatro Operações — Estuda+</title>
+<link rel="stylesheet" href="conteudoOB.css">
+<script src="conteudoOB.js" defer></script>
+</head>
+<body>
+
+<header class="topbar">
+  <a href="../index.html" class="back-link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+    Voltar ao hub
+  </a>
+  <a href="operacoes.html" class="practice-link">🚀 Praticar agora</a>
+</header>
+
+<div class="reading-layout">
+
+  <aside class="toc">
+    <button class="toc-toggle" aria-expanded="true">
+      <span>📚 Índice da jornada</span>
+      <span class="toc-arrow">▸</span>
+    </button>
+    <nav class="toc-nav">
+      <a href="#s1">1. O que são operações matemáticas?</a>
+      <a href="#s2">2. Adição — o herói da união</a>
+      <a href="#s3">3. Subtração — o mestre da diferença</a>
+      <a href="#s4">4. Multiplicação — o titã da repetição</a>
+      <a href="#s5">5. Divisão — o sábio da partilha</a>
+      <a href="#s6">6. Como as operações se relacionam</a>
+      <a href="#s7">7. Casos especiais e armadilhas</a>
+      <a href="#s8">8. Glossário do aventureiro</a>
+      <a href="#s9">9. Resumo final</a>
+    </nav>
+  </aside>
+
+  <main class="content">
+
+    <h1>🧮 As Quatro Operações Matemáticas: Uma Aventura Completa!</h1>
+
+    <blockquote class="quote-big">
+      <p>“A matemática é a linguagem com que Deus escreveu o universo.”</p>
+      <cite>— Galileu Galilei</cite>
+    </blockquote>
+
+    <p>Bem-vindo(a) a esta jornada! Vamos explorar <strong>adição</strong>, <strong>subtração</strong>, <strong>multiplicação</strong> e <strong>divisão</strong> como se fossem quatro super-heróis da matemática — cada um com seus poderes, segredos e histórias. Prepare-se, pois esta será uma viagem longa e cheia de descobertas! 🚀</p>
+
+    <!-- ============ 1 ============ -->
+    <section id="s1">
+      <h2>1. O que são operações matemáticas?</h2>
+
+      <p>Uma <strong>operação matemática</strong> é uma <em>regra</em> que pega um ou mais números (chamados <strong>operandos</strong>) e os transforma em um novo número (chamado <strong>resultado</strong>).</p>
+
+      <p>Pense em cada operação como uma <strong>máquina de transformação</strong>:</p>
+
+<pre class="ascii">   [Entrada]  ──►  ⚙️ MÁQUINA ⚙️  ──►  [Saída]</pre>
+
+      <ul>
+        <li><strong>Operandos</strong> → o que entra na máquina</li>
+        <li><strong>Operador</strong> → o símbolo que indica qual máquina usar (<code>+</code>, <code>−</code>, <code>×</code>, <code>÷</code>)</li>
+        <li><strong>Resultado</strong> → o que sai da máquina</li>
+      </ul>
+
+      <div class="callout tip">
+        <p>💡 <strong>Curiosidade:</strong> As operações são classificadas em <strong>binárias</strong> (dois operandos, como <code>3 + 4</code>) e <strong>unárias</strong> (um operando, como o "menos" que indica um número negativo). As quatro operações básicas são binárias.</p>
+      </div>
+
+      <h3>🔑 Conceitos que aparecem em todas elas</h3>
+
+      <table>
+        <thead><tr><th>Conceito</th><th>Significado</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Fechamento</strong></td><td>O resultado ainda é um número do mesmo conjunto?</td></tr>
+          <tr><td><strong>Comutatividade</strong></td><td>Trocar a ordem muda o resultado?</td></tr>
+          <tr><td><strong>Associatividade</strong></td><td>Agrupar de forma diferente muda o resultado?</td></tr>
+          <tr><td><strong>Elemento neutro</strong></td><td>Existe um número que "não faz nada"?</td></tr>
+          <tr><td><strong>Elemento oposto/inverso</strong></td><td>Existe um número que "desfaz" a operação?</td></tr>
+          <tr><td><strong>Distributividade</strong></td><td>Uma operação "se espalha" sobre outra?</td></tr>
+        </tbody>
+      </table>
+
+      <p>Guardaremos esses conceitos para analisar cada herói!</p>
+    </section>
+
+    <!-- ============ 2 ============ -->
+    <section id="s2">
+      <h2>2. Adição — o herói da união 🤝</h2>
+
+      <h3>🌟 A ideia central</h3>
+      <p><strong>Adicionar</strong> é <strong>juntar</strong>, <strong>acumular</strong>, <strong>somar quantidades</strong>. Se você tem 3 maçãs e ganha mais 5, quantas tem? <strong>8</strong>! A adição responde a perguntas do tipo <em>"quanto é tudo junto?"</em>.</p>
+
+      <p><strong>Símbolo:</strong> <code>+</code> (lê-se "mais")<br>
+      <strong>Resultado:</strong> chamado de <strong>soma</strong> ou <strong>total</strong></p>
+
+      <h3>🧩 A intuição por trás do símbolo</h3>
+      <p>Imagine uma <strong>reta numérica</strong>:</p>
+
+<pre class="ascii">  ...|----|----|----|----|----|----|----|----|...
+    -1    0    1    2    3    4    5    6</pre>
+
+      <p>Adicionar <code>3 + 4</code> significa: <strong>comece no 3 e ande 4 passos para a direita</strong> → chega no 7.</p>
+
+<pre class="ascii">  ...|----|----|----|----|----|----|----|----|...
+     0    1    2    3    4    5    6    7
+                        └───3+4───►│</pre>
+
+      <div class="callout rule">
+        <p>🎯 <strong>Regra de ouro:</strong> adicionar um número <strong>positivo</strong> anda para a <strong>direita</strong>; adicionar um número <strong>negativo</strong> anda para a <strong>esquerda</strong> (o que já começa a misturar adição com subtração — guarde essa ideia!).</p>
+      </div>
+
+      <h3>⚙️ Algoritmo da adição (como fazer no papel)</h3>
+
+      <h4>Passo a passo com números pequenos</h4>
+<pre class="ascii">  3 4 7
++ 2 8 5
+-------</pre>
+
+      <ol>
+        <li><strong>Alinhe pela direita</strong> (unidades sob unidades, dezenas sob dezenas...)</li>
+        <li><strong>Some coluna por coluna</strong>, da direita para a esquerda:</li>
+      </ol>
+
+      <table>
+        <thead><tr><th>Passo</th><th>Conta</th><th>Escreve</th><th>"Vai" (vai um?)</th></tr></thead>
+        <tbody>
+          <tr><td>Unidades</td><td>7 + 5 = 12</td><td><strong>2</strong></td><td><strong>1</strong> (vai para a dezena)</td></tr>
+          <tr><td>Dezenas</td><td>4 + 8 + 1 = 13</td><td><strong>3</strong></td><td><strong>1</strong></td></tr>
+          <tr><td>Centenas</td><td>3 + 2 + 1 = 6</td><td><strong>6</strong></td><td>0</td></tr>
+        </tbody>
+      </table>
+
+      <p><strong>Resultado: 632</strong> ✅</p>
+
+      <h4>O famoso "vai um"</h4>
+      <p>O <strong>"vai um"</strong> é o transporte (<em>carry</em>) de uma coluna para a próxima. Ele existe porque nosso sistema é <strong>decimal</strong>: quando uma coluna passa de 9, "estouramos" a casa e mandamos 1 para a esquerda.</p>
+
+      <div class="callout story">
+        <p>🍬 <strong>Analogia lúdica:</strong> imagine caixas de 10 balas. Se numa coluna você tem 12 balas, enche uma caixa (10) e manda essa caixa para a coluna da esquerda, deixando 2 balas soltas.</p>
+      </div>
+
+      <h3>📐 Propriedades da adição</h3>
+      <table>
+        <thead><tr><th>Propriedade</th><th>O que diz</th><th>Exemplo</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Comutativa</strong></td><td>A ordem não importa</td><td><code>3 + 5 = 5 + 3 = 8</code></td></tr>
+          <tr><td><strong>Associativa</strong></td><td>O agrupamento não importa</td><td><code>(2+3)+4 = 2+(3+4) = 9</code></td></tr>
+          <tr><td><strong>Elemento neutro</strong></td><td>Somar 0 não muda nada</td><td><code>7 + 0 = 7</code></td></tr>
+          <tr><td><strong>Fechamento</strong></td><td>Soma de inteiros é inteiro; de racionais é racional</td><td><code>2 + 3 = 5</code> (inteiro)</td></tr>
+          <tr><td><strong>Elemento oposto</strong></td><td>Todo número tem seu "contrário" que zera</td><td><code>5 + (−5) = 0</code></td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout warning">
+        <p>⚠️ <strong>Atenção:</strong> A adição <strong>não</strong> é distributiva sobre si mesma, mas é distributiva sobre a multiplicação (veremos adiante).</p>
+      </div>
+
+      <h3>🌍 Onde a adição aparece no mundo real</h3>
+      <ul>
+        <li>🛒 Somar o total das compras no supermercado</li>
+        <li>⏰ Calcular quanto tempo falta (somando horas e minutos)</li>
+        <li>🏃 Somar distâncias percorridas numa corrida</li>
+        <li>💰 Depositar dinheiro numa conta bancária</li>
+        <li>🎮 Somar pontos num jogo</li>
+      </ul>
+    </section>
+
+    <!-- ============ 3 ============ -->
+    <section id="s3">
+      <h2>3. Subtração — o mestre da diferença 🎭</h2>
+
+      <h3>🌟 A ideia central</h3>
+      <p><strong>Subtrair</strong> é <strong>tirar</strong>, <strong>remover</strong>, <strong>comparar quanto falta</strong>. Se você tem 8 maçãs e dá 3, quantas sobram? <strong>5</strong>. Se você tem 3 e quer chegar a 8, quanto falta? <strong>5</strong> também! A subtração responde a <em>"quanto sobra?"</em> e <em>"qual a diferença?"</em>.</p>
+
+      <p><strong>Símbolo:</strong> <code>−</code> (lê-se "menos")<br>
+      <strong>Resultado:</strong> chamado de <strong>diferença</strong> ou <strong>resto</strong></p>
+
+      <p><strong>Termos:</strong> <code>minuendo − subtraendo = diferença</code></p>
+
+<pre class="ascii">   8   −   3   =   5
+   │        │       │
+minuendo  subtraendo  diferença</pre>
+
+      <h3>🧩 A intuição na reta numérica</h3>
+      <p><code>8 − 3</code> significa: <strong>comece no 8 e ande 3 passos para a esquerda</strong>.</p>
+
+<pre class="ascii">  ...|----|----|----|----|----|----|----|----|...
+     2    3    4    5    6    7    8    9
+                    │◄───3 passos───│</pre>
+
+      <div class="callout rule">
+        <p>🎯 <strong>Regra de ouro:</strong> subtrair é o <strong>espelho</strong> de adicionar. Subtrair um número <strong>positivo</strong> anda para a <strong>esquerda</strong>; subtrair um <strong>negativo</strong> anda para a <strong>direita</strong> (porque tirar uma dívida é como ganhar dinheiro!).</p>
+      </div>
+
+      <h3>⚙️ Algoritmo da subtração (com empréstimo)</h3>
+
+      <h4>Exemplo simples</h4>
+<pre class="ascii">  7 3 5
+− 2 4 8
+-------</pre>
+
+      <table>
+        <thead><tr><th>Passo</th><th>Conta</th><th>Problema</th><th>Solução</th></tr></thead>
+        <tbody>
+          <tr><td>Unidades</td><td>5 − 8</td><td>5 é menor que 8!</td><td><strong>Empresta</strong> 1 dezena: 15 − 8 = <strong>7</strong></td></tr>
+          <tr><td>Dezenas</td><td>2 − 4</td><td>(a dezena virou 2 porque emprestou)</td><td>Empresta 1 centena: 12 − 4 = <strong>8</strong></td></tr>
+          <tr><td>Centenas</td><td>6 − 2</td><td>(a centena virou 6)</td><td><strong>4</strong></td></tr>
+        </tbody>
+      </table>
+
+      <p><strong>Resultado: 487</strong> ✅</p>
+
+      <h4>O "empresta um" (ou "pede emprestado")</h4>
+      <div class="callout story">
+        <p>🏦 <strong>Analogia lúdica:</strong> imagine que cada coluna é uma <strong>carteira</strong>. Se a carteira das unidades não tem dinheiro suficiente para pagar, ela <strong>pede emprestado</strong> à carteira das dezenas. Mas atenção: 1 dezena = 10 unidades! Por isso o valor "emprestado" vira 10 na coluna da direita e a coluna da esquerda <strong>perde 1</strong>.</p>
+      </div>
+
+      <p><strong>Detalhe importante:</strong> diferente da adição, a subtração <strong>não é comutativa</strong>! <code>8 − 3 ≠ 3 − 8</code>. A ordem importa demais!</p>
+
+      <h3>📐 Propriedades da subtração</h3>
+      <table>
+        <thead><tr><th>Propriedade</th><th>O que diz</th><th>Exemplo</th></tr></thead>
+        <tbody>
+          <tr><td><strong>NÃO comutativa</strong></td><td>A ordem importa</td><td><code>8 − 3 = 5</code>, mas <code>3 − 8 = −5</code></td></tr>
+          <tr><td><strong>NÃO associativa</strong></td><td>O agrupamento importa</td><td><code>(10−5)−2 = 3</code>, mas <code>10−(5−2) = 7</code></td></tr>
+          <tr><td><strong>Elemento neutro</strong></td><td>Subtrair 0 não muda nada</td><td><code>7 − 0 = 7</code></td></tr>
+          <tr><td><strong>Fechamento</strong></td><td>Só é fechada nos inteiros (e conjuntos maiores)</td><td><code>3 − 5 = −2</code> (não é natural!)</td></tr>
+          <tr><td><strong>Relação com a adição</strong></td><td><code>a − b = a + (−b)</code></td><td><code>8 − 3 = 8 + (−3)</code></td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout secret">
+        <p>💡 <strong>Segredo:</strong> A subtração é, na verdade, uma <strong>adição com o oposto</strong>! Por isso muitas calculadoras e linguagens de programação nem têm operador de subtração separado — elas somam o número negativo.</p>
+      </div>
+
+      <h3>🌍 Onde a subtração aparece no mundo real</h3>
+      <ul>
+        <li>💸 Calcular o troco</li>
+        <li>📉 Medir a diferença de temperatura entre dois dias</li>
+        <li>⏳ Calcular quanto tempo falta para um evento</li>
+        <li>🏋️ Ver quanto peso foi perdido</li>
+        <li>🎯 Comparar placares de um jogo</li>
+      </ul>
+    </section>
+
+    <!-- ============ 4 ============ -->
+    <section id="s4">
+      <h2>4. Multiplicação — o titã da repetição 💪</h2>
+
+      <h3>🌟 A ideia central</h3>
+      <p><strong>Multiplicar</strong> é <strong>somar repetidamente</strong>! Se você tem 4 caixas com 3 maçãs cada, quantas maçãs tem? <code>3 + 3 + 3 + 3 = 12</code>, ou seja, <strong>4 × 3 = 12</strong>. A multiplicação responde a <em>"quantas vezes?"</em>.</p>
+
+      <p><strong>Símbolos:</strong> <code>×</code>, <code>·</code>, ou <code>*</code> (em programação)<br>
+      <strong>Resultado:</strong> chamado de <strong>produto</strong><br>
+      <strong>Termos:</strong> <code>multiplicando × multiplicador = produto</code> (ambos são <strong>fatores</strong>)</p>
+
+<pre class="ascii">   4   ×   3   =   12
+   │        │       │
+fator    fator   produto</pre>
+
+      <h3>🧩 A intuição visual: retângulos!</h3>
+      <p>Multiplicação é <strong>área</strong>! Imagine uma grade:</p>
+
+<pre class="ascii">   ● ● ●
+   ● ● ●     →  3 linhas × 3 colunas = 9 pontos
+   ● ● ●</pre>
+
+      <p><code>3 × 3 = 9</code>. Por isso dizemos "3 ao quadrado = 9" — é literalmente um quadrado de pontos! 🔲</p>
+
+      <div class="callout rule">
+        <p>🎯 <strong>Regra de ouro:</strong> <code>a × b</code> significa "<strong>a grupos de b</strong>" ou "<strong>b grupos de a</strong>" — e o resultado é o mesmo (comutatividade!).</p>
+      </div>
+
+      <h3>⚙️ Algoritmo da multiplicação</h3>
+
+      <h4>Multiplicação por um número de um dígito</h4>
+<pre class="ascii">  4 3 2
+×     3
+-------</pre>
+
+      <table>
+        <thead><tr><th>Passo</th><th>Conta</th><th>Escreve</th><th>"Vai"</th></tr></thead>
+        <tbody>
+          <tr><td>Unidades</td><td>2×3 = 6</td><td><strong>6</strong></td><td>0</td></tr>
+          <tr><td>Dezenas</td><td>3×3 = 9</td><td><strong>9</strong></td><td>0</td></tr>
+          <tr><td>Centenas</td><td>4×3 = 12</td><td><strong>2</strong></td><td><strong>1</strong> (vai para a esquerda)</td></tr>
+        </tbody>
+      </table>
+
+      <p><strong>Resultado: 1296</strong> ✅</p>
+
+      <h4>Multiplicação por dois dígitos (o famoso "método longo")</h4>
+<pre class="ascii">     3 4
+×    2 5
+---------
+   1 7 0    ← 34 × 5  (multiplicando pelas unidades)
++ 6 8 0     ← 34 × 2  (multiplicando pelas dezenas, deslocado 1 casa)
+---------
+   8 5 0</pre>
+
+      <div class="callout note">
+        <p>📝 <strong>Detalhe crucial:</strong> quando multiplicamos pelas <strong>dezenas</strong>, o resultado é <strong>deslocado uma casa para a esquerda</strong> (ou escrevemos um <code>0</code> no final). Por quê? Porque <code>2 dezenas = 20</code>, então <code>34 × 20 = 680</code>, não <code>68</code>!</p>
+      </div>
+
+      <h4>Multiplicação de números grandes: o método da grade (tabular)</h4>
+      <p>Para números maiores, usa-se uma <strong>grade</strong> (ou <em>lattice</em>):</p>
+
+<pre class="ascii">     3   4
+   ┌───┬───┐
+ 2 │06 │08 │   ← 2×3=06, 2×4=08
+   ├───┼───┤
+ 5 │15 │20 │   ← 5×3=15, 5×4=20
+   └───┴───┘</pre>
+
+      <p>Depois somam-se as <strong>diagonais</strong>. É o mesmo princípio, só que organizado de forma visual!</p>
+
+      <h3>📐 Propriedades da multiplicação</h3>
+      <table>
+        <thead><tr><th>Propriedade</th><th>O que diz</th><th>Exemplo</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Comutativa</strong></td><td>A ordem não importa</td><td><code>3 × 5 = 5 × 3 = 15</code></td></tr>
+          <tr><td><strong>Associativa</strong></td><td>O agrupamento não importa</td><td><code>(2×3)×4 = 2×(3×4) = 24</code></td></tr>
+          <tr><td><strong>Elemento neutro</strong></td><td>Multiplicar por 1 não muda nada</td><td><code>7 × 1 = 7</code></td></tr>
+          <tr><td><strong>Elemento absorvente</strong></td><td>Multiplicar por 0 <strong>zera tudo</strong></td><td><code>7 × 0 = 0</code></td></tr>
+          <tr><td><strong>Distributiva</strong></td><td>"Espalha" sobre a adição</td><td><code>2×(3+4) = 2×3 + 2×4 = 14</code></td></tr>
+          <tr><td><strong>Fechamento</strong></td><td>Produto de inteiros é inteiro</td><td><code>(−2)×3 = −6</code></td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout warning">
+        <p>⚠️ <strong>Armadilha clássica:</strong> a multiplicação <strong>não</strong> é distributiva sobre si mesma. <code>2×(3×4)</code> <strong>não</strong> é <code>(2×3)×(2×4)</code>! Isso daria 24 vs. 48 — errado!</p>
+      </div>
+
+      <h3>🌟 A regra dos sinais (muito importante!)</h3>
+      <table>
+        <thead><tr><th>Operação</th><th>Resultado</th><th>Exemplo</th></tr></thead>
+        <tbody>
+          <tr><td><code>+ × +</code></td><td><strong>+</strong></td><td><code>3 × 4 = 12</code></td></tr>
+          <tr><td><code>+ × −</code></td><td><strong>−</strong></td><td><code>3 × (−4) = −12</code></td></tr>
+          <tr><td><code>− × +</code></td><td><strong>−</strong></td><td><code>(−3) × 4 = −12</code></td></tr>
+          <tr><td><code>− × −</code></td><td><strong>+</strong></td><td><code>(−3) × (−4) = 12</code></td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout secret">
+        <p>🧠 <strong>Mnemônico:</strong> "<strong>amigo do meu amigo é meu amigo; inimigo do meu inimigo é meu amigo; amigo do meu inimigo é meu inimigo; inimigo do meu amigo é meu inimigo</strong>".</p>
+      </div>
+
+      <h3>🌍 Onde a multiplicação aparece no mundo real</h3>
+      <ul>
+        <li>🛒 Calcular o total de itens (preço × quantidade)</li>
+        <li>📐 Calcular áreas (comprimento × largura)</li>
+        <li>⚡ Calcular consumo de energia (potência × tempo)</li>
+        <li>🎲 Probabilidades (eventos independentes se multiplicam)</li>
+        <li>💰 Juros simples (capital × taxa × tempo)</li>
+      </ul>
+    </section>
+
+    <!-- ============ 5 ============ -->
+    <section id="s5">
+      <h2>5. Divisão — o sábio da partilha 🍰</h2>
+
+      <h3>🌟 A ideia central</h3>
+      <p><strong>Dividir</strong> é <strong>repartir em partes iguais</strong> ou <strong>descobrir quantas vezes um número cabe em outro</strong>. Se você tem 12 balas e 4 amigos, quantas balas cada um ganha? <strong>3</strong>! Se você tem 12 balas e quer dar 4 para cada amigo, quantos amigos são atendidos? <strong>3</strong> também! A divisão responde a <em>"quanto cada um recebe?"</em> e <em>"quantas vezes cabe?"</em>.</p>
+
+      <p><strong>Símbolos:</strong> <code>÷</code>, <code>/</code>, ou <code>:</code> (em alguns países)<br>
+      <strong>Resultado:</strong> chamado de <strong>quociente</strong><br>
+      <strong>Termos:</strong> <code>dividendo ÷ divisor = quociente</code> (e às vezes sobra o <strong>resto</strong>)</p>
+
+<pre class="ascii">   12  ÷   4   =   3
+   │       │       │
+dividendo divisor quociente</pre>
+
+      <h3>🧩 As duas interpretações da divisão</h3>
+      <p>A divisão tem <strong>duas caras</strong> (e é importante entender as duas!):</p>
+
+      <h4>1️⃣ Partilha (repartir em partes iguais)</h4>
+      <blockquote><p>"Tenho 12 balas para dividir entre 4 amigos. Quantas balas cada um ganha?"</p></blockquote>
+
+<pre class="ascii">🍬🍬🍬  🍬🍬🍬  🍬🍬🍬  🍬🍬🍬
+  Amigo1  Amigo2  Amigo3  Amigo4</pre>
+
+      <p>Cada um ganha <strong>3 balas</strong>.</p>
+
+      <h4>2️⃣ Medida (quantas vezes cabe)</h4>
+      <blockquote><p>"Tenho 12 balas e quero dar 4 para cada amigo. Quantos amigos posso atender?"</p></blockquote>
+
+<pre class="ascii">🍬🍬🍬🍬 | 🍬🍬🍬🍬 | 🍬🍬🍬🍬
+ Grupo1    Grupo2    Grupo3</pre>
+
+      <p>Consigo atender <strong>3 amigos</strong>.</p>
+
+      <div class="callout rule">
+        <p>🎯 <strong>Segredo:</strong> As duas interpretações dão o mesmo resultado (<code>12 ÷ 4 = 3</code>), mas a <strong>intuição</strong> por trás é diferente. A primeira é "repartir", a segunda é "medir quantas vezes cabe".</p>
+      </div>
+
+      <h3>⚙️ Algoritmo da divisão</h3>
+
+      <h4>Divisão exata (sem resto)</h4>
+      <p><code>156 ÷ 4 = ?</code></p>
+
+<pre class="ascii">      3 9
+   ┌─────
+ 4 │1 5 6
+   -1 2
+   ────
+      3 6
+     -3 6
+     ────
+        0</pre>
+
+      <p><strong>Passo a passo:</strong></p>
+      <ol>
+        <li><strong>1 ÷ 4</strong> → não cabe (0). Pega o próximo dígito: <strong>15</strong></li>
+        <li><strong>15 ÷ 4 = 3</strong> (porque 4×3=12, 4×4=16 passa). Escreve <strong>3</strong>, sobra <strong>3</strong></li>
+        <li>"Desce" o <strong>6</strong> → <strong>36</strong></li>
+        <li><strong>36 ÷ 4 = 9</strong>. Escreve <strong>9</strong>, sobra <strong>0</strong></li>
+        <li><strong>Resultado: 39</strong> ✅</li>
+      </ol>
+
+      <h4>Divisão com resto</h4>
+      <p><code>17 ÷ 5 = ?</code></p>
+
+<pre class="ascii">      3
+   ┌─────
+ 5 │1 7
+   -1 5
+   ────
+      2   ← resto</pre>
+
+      <p><strong>Resultado: quociente 3, resto 2</strong>. Ou seja, <code>17 = 5 × 3 + 2</code>.</p>
+
+      <div class="callout note">
+        <p>📝 <strong>Fórmula fundamental da divisão:</strong></p>
+<pre class="ascii">dividendo = divisor × quociente + resto</pre>
+        <p>E o <strong>resto é sempre menor que o divisor</strong> (<code>0 ≤ resto &lt; divisor</code>). Se não for, é porque você pode dividir mais uma vez!</p>
+      </div>
+
+      <h3>📐 Propriedades da divisão</h3>
+      <table>
+        <thead><tr><th>Propriedade</th><th>O que diz</th><th>Exemplo</th></tr></thead>
+        <tbody>
+          <tr><td><strong>NÃO comutativa</strong></td><td>A ordem importa</td><td><code>12 ÷ 4 = 3</code>, mas <code>4 ÷ 12 = 0,333...</code></td></tr>
+          <tr><td><strong>NÃO associativa</strong></td><td>O agrupamento importa</td><td><code>(24÷4)÷2 = 3</code>, mas <code>24÷(4÷2) = 12</code></td></tr>
+          <tr><td><strong>Elemento neutro</strong></td><td>Dividir por 1 não muda nada</td><td><code>7 ÷ 1 = 7</code></td></tr>
+          <tr><td><strong>NÃO fechada nos naturais</strong></td><td>Pode dar fração</td><td><code>3 ÷ 5 = 0,6</code></td></tr>
+          <tr><td><strong>Relação com a multiplicação</strong></td><td>É a operação inversa</td><td><code>a ÷ b = c</code> ⟺ <code>a = b × c</code></td></tr>
+          <tr><td><strong>Distributiva à direita</strong></td><td><code>(a+b)÷c = a÷c + b÷c</code></td><td><code>(10+6)÷2 = 5+3 = 8</code></td></tr>
+          <tr><td><strong>NÃO distributiva à esquerda</strong></td><td><code>a÷(b+c) ≠ a÷b + a÷c</code></td><td><code>12÷(3+1) = 3</code>, mas <code>12÷3+12÷1 = 16</code></td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout warning">
+        <p>⚠️ <strong>Armadilha enorme:</strong> a divisão <strong>não é distributiva</strong> do lado esquerdo! <code>12 ÷ (3+1) = 12 ÷ 4 = 3</code>, <strong>não</strong> <code>12÷3 + 12÷1 = 16</code>. Cuidado!</p>
+      </div>
+
+      <h3>🚫 A divisão por zero</h3>
+      <blockquote><p><strong>Dividir por zero é impossível!</strong> Por quê?</p></blockquote>
+
+      <p>Porque a divisão é a operação inversa da multiplicação. Se <code>12 ÷ 0 = x</code>, então <code>x × 0 = 12</code>. Mas <strong>qualquer número vezes 0 é 0</strong>, nunca 12! Não existe <code>x</code> que resolva isso. Por isso dizemos que a divisão por zero é <strong>indefinida</strong>.</p>
+
+      <div class="callout story">
+        <p>🤯 <strong>Curiosidade:</strong> <code>0 ÷ 0</code> é chamado de <strong>indeterminado</strong>, porque qualquer número vezes 0 dá 0 — então qualquer resposta "funcionaria", e isso não define um resultado único.</p>
+      </div>
+
+      <h3>A regra dos sinais na divisão</h3>
+      <p>Funciona <strong>igual</strong> à multiplicação:</p>
+      <table>
+        <thead><tr><th>Operação</th><th>Resultado</th></tr></thead>
+        <tbody>
+          <tr><td><code>+ ÷ +</code></td><td><strong>+</strong></td></tr>
+          <tr><td><code>+ ÷ −</code></td><td><strong>−</strong></td></tr>
+          <tr><td><code>− ÷ +</code></td><td><strong>−</strong></td></tr>
+          <tr><td><code>− ÷ −</code></td><td><strong>+</strong></td></tr>
+        </tbody>
+      </table>
+
+      <h3>🌍 Onde a divisão aparece no mundo real</h3>
+      <ul>
+        <li>🍕 Dividir pizza entre amigos</li>
+        <li>💰 Calcular o preço unitário (total ÷ quantidade)</li>
+        <li>⏱️ Calcular velocidade média (distância ÷ tempo)</li>
+        <li>📊 Calcular médias (soma ÷ quantidade)</li>
+        <li>🎯 Dividir tarefas em partes iguais</li>
+      </ul>
+    </section>
+
+    <!-- ============ 6 ============ -->
+    <section id="s6">
+      <h2>6. Como as operações se relacionam</h2>
+
+      <p>As quatro operações não são ilhas isoladas — elas formam uma <strong>família interligada</strong>:</p>
+
+<pre class="ascii">        Adição  ◄──────►  Subtração
+          ▲                  ▲
+          │                  │
+          ▼                  ▼
+     Multiplicação ◄──────► Divisão</pre>
+
+      <h3>🔗 Pares inversos</h3>
+      <table>
+        <thead><tr><th>Operação</th><th>Sua inversa</th><th>Exemplo</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Adição</strong></td><td><strong>Subtração</strong></td><td><code>5 + 3 = 8</code> ⟺ <code>8 − 3 = 5</code></td></tr>
+          <tr><td><strong>Multiplicação</strong></td><td><strong>Divisão</strong></td><td><code>4 × 3 = 12</code> ⟺ <code>12 ÷ 3 = 4</code></td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout secret">
+        <p>💡 <strong>Ideia poderosa:</strong> toda subtração pode ser reescrita como adição (<code>a − b = a + (−b)</code>), e toda divisão como multiplicação (<code>a ÷ b = a × (1/b)</code>). Por isso, na matemática avançada, muitas vezes só precisamos de <strong>duas</strong> operações: soma e multiplicação!</p>
+      </div>
+
+      <h3>🔗 A hierarquia das operações (ordem de precedência)</h3>
+      <p>Quando aparecem várias operações juntas, existe uma <strong>ordem</strong> para resolver:</p>
+      <ol>
+        <li><strong>Parênteses</strong> <code>( )</code> — sempre primeiro!</li>
+        <li><strong>Potenciação e radiciação</strong> (não estão neste guia, mas vêm depois)</li>
+        <li><strong>Multiplicação e divisão</strong> — da esquerda para a direita</li>
+        <li><strong>Adição e subtração</strong> — da esquerda para a direita</li>
+      </ol>
+
+      <div class="callout secret">
+        <p>🧠 <strong>Mnemônico:</strong> <strong>P</strong>arênteses → <strong>E</strong>xpoentes → <strong>M</strong>ultiplicação/<strong>D</strong>ivisão → <strong>A</strong>dição/<strong>S</strong>ubtração (PEMDAS, ou "Please Excuse My Dear Aunt Sally").</p>
+      </div>
+
+      <p><strong>Exemplo:</strong> <code>2 + 3 × 4 = ?</code></p>
+      <ul>
+        <li>Errado: <code>(2+3) × 4 = 20</code> ❌</li>
+        <li>Certo: <code>2 + (3×4) = 2 + 12 = 14</code> ✅</li>
+      </ul>
+
+      <h3>🔗 A propriedade distributiva (a ponte entre operações)</h3>
+      <p>A multiplicação <strong>se distribui</strong> sobre a adição e a subtração:</p>
+
+<pre class="ascii">a × (b + c) = a×b + a×c
+a × (b − c) = a×b − a×c</pre>
+
+      <p><strong>Exemplo:</strong> <code>3 × (4 + 5) = 3×4 + 3×5 = 12 + 15 = 27</code> ✅ (e <code>3 × 9 = 27</code>, confere!)</p>
+
+      <div class="callout story">
+        <p>🧙 <strong>Truque de cálculo mental:</strong> <code>7 × 99 = 7 × (100 − 1) = 700 − 7 = 693</code>. A distributiva é uma superpotência para contas mentais!</p>
+      </div>
+    </section>
+
+    <!-- ============ 7 ============ -->
+    <section id="s7">
+      <h2>7. Casos especiais e armadilhas</h2>
+
+      <h3>🕳️ Armadilha 1: A ordem importa (muito!)</h3>
+      <table>
+        <thead><tr><th>Expressão</th><th>Resultado</th><th>Expressão</th><th>Resultado</th></tr></thead>
+        <tbody>
+          <tr><td><code>8 − 3</code></td><td><strong>5</strong></td><td><code>3 − 8</code></td><td><strong>−5</strong></td></tr>
+          <tr><td><code>12 ÷ 4</code></td><td><strong>3</strong></td><td><code>4 ÷ 12</code></td><td><strong>0,333...</strong></td></tr>
+        </tbody>
+      </table>
+
+      <p><strong>Lição:</strong> só adição e multiplicação são comutativas. Subtração e divisão <strong>não são</strong>!</p>
+
+      <h3>🕳️ Armadilha 2: O zero é traiçoeiro</h3>
+      <table>
+        <thead><tr><th>Operação</th><th>Resultado</th></tr></thead>
+        <tbody>
+          <tr><td><code>5 + 0</code></td><td><strong>5</strong> (neutro da adição)</td></tr>
+          <tr><td><code>5 − 0</code></td><td><strong>5</strong></td></tr>
+          <tr><td><code>5 × 0</code></td><td><strong>0</strong> (absorvente!)</td></tr>
+          <tr><td><code>0 ÷ 5</code></td><td><strong>0</strong></td></tr>
+          <tr><td><code>5 ÷ 0</code></td><td><strong>❌ indefinido!</strong></td></tr>
+          <tr><td><code>0 ÷ 0</code></td><td><strong>❌ indeterminado!</strong></td></tr>
+        </tbody>
+      </table>
+
+      <h3>🕳️ Armadilha 3: Sinais negativos</h3>
+      <ul>
+        <li><code>−(−5) = +5</code> (menos com menos dá mais!)</li>
+        <li><code>3 − (−2) = 3 + 2 = 5</code> (tirar uma dívida é ganhar!)</li>
+        <li><code>(−3) × (−4) = +12</code></li>
+        <li><code>(−12) ÷ (−4) = +3</code></li>
+      </ul>
+
+      <h3>🕳️ Armadilha 4: Frações e decimais na divisão</h3>
+      <p><code>1 ÷ 3 = 0,333...</code> (dízima periódica). Nem toda divisão dá um número "redondo"! Por isso existem as <strong>frações</strong>: <code>1/3</code> é a forma exata de representar essa divisão.</p>
+
+      <h3>🕳️ Armadilha 5: O "resto" da divisão</h3>
+      <p><code>17 ÷ 5 = 3</code> com <strong>resto 2</strong>. Isso <strong>não</strong> significa que o resultado é 3 "e pouco" — significa que <code>17 = 5×3 + 2</code>. Em contextos práticos (como dividir pessoas), o resto importa muito!</p>
+    </section>
+
+    <!-- ============ 8 ============ -->
+    <section id="s8">
+      <h2>8. Glossário do aventureiro</h2>
+
+      <table>
+        <thead><tr><th>Termo</th><th>Significado</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Operando</strong></td><td>Número que entra na operação</td></tr>
+          <tr><td><strong>Operador</strong></td><td>Símbolo que indica a operação (<code>+</code>, <code>−</code>, <code>×</code>, <code>÷</code>)</td></tr>
+          <tr><td><strong>Soma</strong></td><td>Resultado da adição</td></tr>
+          <tr><td><strong>Diferença</strong></td><td>Resultado da subtração</td></tr>
+          <tr><td><strong>Produto</strong></td><td>Resultado da multiplicação</td></tr>
+          <tr><td><strong>Quociente</strong></td><td>Resultado da divisão</td></tr>
+          <tr><td><strong>Resto</strong></td><td>O que sobra numa divisão inexata</td></tr>
+          <tr><td><strong>Fator</strong></td><td>Cada número numa multiplicação</td></tr>
+          <tr><td><strong>Dividendo</strong></td><td>Número que está sendo dividido</td></tr>
+          <tr><td><strong>Divisor</strong></td><td>Número pelo qual se divide</td></tr>
+          <tr><td><strong>Comutativa</strong></td><td>Propriedade de poder trocar a ordem</td></tr>
+          <tr><td><strong>Associativa</strong></td><td>Propriedade de poder mudar o agrupamento</td></tr>
+          <tr><td><strong>Distributiva</strong></td><td>Propriedade de "espalhar" uma operação sobre outra</td></tr>
+          <tr><td><strong>Elemento neutro</strong></td><td>Número que não altera o resultado (0 na soma, 1 na multiplicação)</td></tr>
+          <tr><td><strong>Elemento absorvente</strong></td><td>Número que "engole" tudo (0 na multiplicação)</td></tr>
+          <tr><td><strong>Inverso</strong></td><td>Operação que desfaz outra (subtração desfaz adição; divisão desfaz multiplicação)</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ============ 9 ============ -->
+    <section id="s9">
+      <h2>9. Resumo final</h2>
+
+      <h3>🎴 Cartão-resumo das quatro operações</h3>
+      <table>
+        <thead><tr><th>Operação</th><th>Símbolo</th><th>Ideia</th><th>Resultado</th><th>Comutativa?</th><th>Inversa</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Adição</strong></td><td><code>+</code></td><td>Juntar</td><td>Soma</td><td>✅ Sim</td><td>Subtração</td></tr>
+          <tr><td><strong>Subtração</strong></td><td><code>−</code></td><td>Tirar/comparar</td><td>Diferença</td><td>❌ Não</td><td>Adição</td></tr>
+          <tr><td><strong>Multiplicação</strong></td><td><code>×</code></td><td>Somar repetidamente</td><td>Produto</td><td>✅ Sim</td><td>Divisão</td></tr>
+          <tr><td><strong>Divisão</strong></td><td><code>÷</code></td><td>Repartir/medir</td><td>Quociente</td><td>❌ Não</td><td>Multiplicação</td></tr>
+        </tbody>
+      </table>
+
+      <h3>🧠 As grandes lições</h3>
+      <ol>
+        <li><strong>Adição e multiplicação são "gentis"</strong>: comutativas, associativas, têm neutro.</li>
+        <li><strong>Subtração e divisão são "exigentes"</strong>: a ordem importa, o agrupamento importa.</li>
+        <li><strong>Tudo se conecta</strong>: subtração é adição com oposto; divisão é multiplicação pelo inverso.</li>
+        <li><strong>A distributiva é uma ponte</strong> entre a multiplicação e a adição/subtração.</li>
+        <li><strong>O zero é poderoso</strong>: neutro na soma, absorvente na multiplicação, proibido como divisor.</li>
+        <li><strong>A ordem de precedência</strong> (PEMDAS) evita ambiguidades em expressões compostas.</li>
+      </ol>
+
+      <div class="callout final">
+        <p>🌟 <strong>Mensagem final:</strong> As quatro operações são como as quatro estações do ano da matemática — cada uma com sua personalidade, mas todas trabalhando juntas para descrever o mundo. Dominá-las é abrir a porta para todo o resto da matemática. Boa aventura! 🧭✨</p>
+      </div>
+
+      <div class="cta-end">
+        <a href="operacoes.html" class="btn btn-primary">🚀 Praticar agora</a>
+        <a href="../index.html" class="btn">← Voltar ao hub</a>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+</body>
+</html>

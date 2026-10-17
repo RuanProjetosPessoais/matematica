@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1014">
+<title>Operações Básicas — treino com cronômetro</title>
+<link rel="stylesheet" href="operacoes.css">
+<script src="operacoes.js" defer></script>
+</head>
+<body>
+<div class="app">
+
+  <div class="top-nav">
+    <a href="../index.html" class="back-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      Voltar ao hub
+    </a>
+    <a href="conteudoOB.html" class="theory-link">📖 Ver teoria</a>
+  </div>
+
+  <h1>Operações Básicas ⏱️</h1>
+  <p class="sub">Adição, subtração, multiplicação e divisão — questões aleatórias com cronômetro por questão.</p>
+
+  <!-- ============ CONFIGURAÇÃO ============ -->
+  <section id="setup" class="card">
+    <h2>1. Escolha as operações</h2>
+    <div id="ops" class="chips">
+      <label class="chip"><input type="checkbox" class="op-cb" value="+" checked><span>➕</span></label>
+      <label class="chip"><input type="checkbox" class="op-cb" value="-" checked><span>➖</span></label>
+      <label class="chip"><input type="checkbox" class="op-cb" value="×" checked><span>✖️</span></label>
+      <label class="chip"><input type="checkbox" class="op-cb" value="÷" checked><span>➗</span></label>
+    </div>
+
+    <div class="row">
+      <button class="btn" data-preset="all">Todas</button>
+      <button class="btn" data-preset="none">Limpar</button>
+    </div>
+
+    <div class="row">
+      <label class="opt">Números até
+        <input type="number" id="maxN" value="10" min="2" max="20">
+      </label>
+      <label class="opt">Questões
+        <input type="number" id="sessionLen" value="20" min="0" placeholder="0 = todas">
+      </label>
+    </div>
+
+    <div class="row">
+      <label class="opt">Meta por questão (s)
+        <input type="text" id="goalTime" inputmode="decimal" value="5" placeholder="0 = sem meta">
+      </label>
+    </div>
+
+    <button id="startBtn" class="btn primary btn-block btn-lg">Começar treino</button>
+    <button id="reportBtn" class="btn btn-block">📊 Relatório de erros</button>
+    <button id="clearAllBtn" class="btn btn-block btn-danger">🗑️ Limpar todos os dados salvos</button>
+
+    <div id="history"></div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section id="quiz" class="card" style="display:none">
+    <div class="topbar">
+      <span id="progress">0 / 0</span>
+      <span id="timer">0,0s</span>
+      <button id="quitBtn" class="btn ghost">Encerrar</button>
+    </div>
+    <div class="progressbar"><div id="progressFill"></div></div>
+
+    <div class="question" id="question">— <span class="x">?</span> —</div>
+
+    <form id="answerForm" autocomplete="off">
+      <input id="answer" type="text" inputmode="decimal" placeholder="?" autocomplete="off" autocorrect="off" spellcheck="false">
+      <div class="row row-tight row-center">
+        <button type="submit" class="btn primary btn-submit">Responder</button>
+        <button type="button" id="skipBtn" class="btn">Pular</button>
+      </div>
+    </form>
+
+    <div id="feedback" class="feedback"></div>
+    <div id="liveStats" class="stats"></div>
+  </section>
+
+  <!-- ============ RESULTADOS ============ -->
+  <section id="results" class="card" style="display:none">
+    <h2 id="resultsTitle">Resultado da sessão</h2>
+    <div class="summary" id="summary"></div>
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>Conta</th><th>Resposta</th><th>Tempo</th><th>Erros</th></tr>
+        </thead>
+        <tbody id="recordsBody"></tbody>
+      </table>
+    </div>
+    <div class="row actions-row">
+      <button id="againBtn" class="btn primary">Novo treino</button>
+      <button id="csvBtn" class="btn">Exportar CSV</button>
+      <button id="reportBtn2" class="btn">📊 Relatório de erros</button>
+    </div>
+  </section>
+
+  <!-- ============ MODAL DE RELATÓRIO ============ -->
+  <div id="reportModal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-label="Relatório de erros">
+    <div class="modal">
+      <div class="modal-head">
+        <h2 class="modal-title">📊 Relatório de erros</h2>
+        <button id="closeReportBtn" class="btn ghost">Fechar</button>
+      </div>
+      <div id="reportBody"></div>
+      <div class="row actions-row">
+        <button id="resetErrorsBtn" class="btn">Limpar dados acumulados</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
