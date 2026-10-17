@@ -2,8 +2,9 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1014">
 <title>Tabuada Rápida — treino com cronômetro</title>
 <link rel="stylesheet" href="style.css">
 <script src="script.js" defer></script>
@@ -33,9 +34,9 @@
       </label>
     </div>
 
-    <button id="startBtn" class="btn primary" style="width:100%;padding:15px;font-size:16px">
-      Começar treino
-    </button>
+    <button id="startBtn" class="btn primary btn-block btn-lg">Começar treino</button>
+    <button id="reportBtn" class="btn btn-block">📊 Relatório de erros</button>
+    <button id="clearAllBtn" class="btn btn-block btn-danger">🗑️ Limpar todos os dados salvos</button>
 
     <div id="history"></div>
   </section>
@@ -53,8 +54,8 @@
 
     <form id="answerForm" autocomplete="off">
       <input id="answer" type="text" inputmode="numeric" placeholder="?" autocomplete="off" autocorrect="off" spellcheck="false">
-      <div class="row" style="margin:0;justify-content:center">
-        <button type="submit" class="btn primary" style="min-width:150px">Responder</button>
+      <div class="row row-tight row-center">
+        <button type="submit" class="btn primary btn-submit">Responder</button>
         <button type="button" id="skipBtn" class="btn">Pular</button>
       </div>
     </form>
@@ -75,11 +76,26 @@
         <tbody id="recordsBody"></tbody>
       </table>
     </div>
-    <div class="row" style="margin-top:18px">
+    <div class="row actions-row">
       <button id="againBtn" class="btn primary">Novo treino</button>
       <button id="csvBtn" class="btn">Exportar CSV</button>
+      <button id="reportBtn2" class="btn">📊 Relatório de erros</button>
     </div>
   </section>
+
+  <!-- ============ MODAL DE RELATÓRIO ============ -->
+  <div id="reportModal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-label="Relatório de erros">
+    <div class="modal">
+      <div class="modal-head">
+        <h2 class="modal-title">📊 Relatório de erros</h2>
+        <button id="closeReportBtn" class="btn ghost">Fechar</button>
+      </div>
+      <div id="reportBody"></div>
+      <div class="row actions-row">
+        <button id="resetErrorsBtn" class="btn">Limpar dados acumulados</button>
+      </div>
+    </div>
+  </div>
 </div>
 </body>
 </html>
