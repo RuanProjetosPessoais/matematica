@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e1014">
+<title>Estuda+ — Matemática Básica</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+
+    <header class="hero">
+      <div class="logo">📚</div>
+      <h1>Estuda<span>+</span></h1>
+      <p class="tagline">Seu hub de estudos de matemática básica</p>
+      <div class="progress-pill">
+        <span class="pulse-dot"></span>
+        <span><strong id="readyCount">0</strong> de <strong id="totalCount">0</strong> módulos disponíveis</span>
+      </div>
+    </header>
+
+    <div class="search-wrap">
+      <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+      <input type="search" id="search" placeholder="Buscar tópico (ex: frações, equações)…" autocomplete="off" aria-label="Buscar tópico">
+    </div>
+
+    <main id="modules">
+
+      <!-- ARITMÉTICA -->
+      <section class="category" data-cat="aritmetica">
+        <h2><span class="cat-dot" style="--c:#4f8cff"></span>Aritmética</h2>
+        <div class="cards">
+          <a class="card ready" href="tabuada/">
+            <div class="card-top">
+              <div class="icon">✖️</div>
+              <span class="badge badge-ready">Pronto</span>
+            </div>
+            <h3>Tabuada</h3>
+            <p>Memorização com cronômetro e relatório de erros</p>
+          </a>
+
+          <div class="card soon" tabindex="0" data-name="Operações básicas">
+            <div class="card-top"><div class="icon">➕</div><span class="badge">Em breve</span></div>
+            <h3>Operações básicas</h3>
+            <p>Soma, subtração, multiplicação e divisão</p>
+          </div>
+
+          <div class="card soon" tabindex="0" data-name="Frações">
+            <div class="card-top"><div class="icon">🍰</div><span class="badge">Em breve</span></div>
+            <h3>Frações</h3>
+            <p>Simplificação, operações e comparação</p>
+          </div>
+
+          <div class="card soon" tabindex="0" data-name="Números decimais">
+            <div class="card-top"><div class="icon">🔢</div><span class="badge">Em breve</span></div>
+            <h3>Números decimais</h3>
+            <p>Leitura, operações e conversões</p>
+          </div>
+
+          <div class="card soon" tabindex="0" data-name="Porcentagem">
+            <div class="card-top"><div class="icon">%</div><span class="badge">Em breve</span></div>
+            <h3>Porcentagem</h3>
+            <p>Descontos, aumentos e proporções</p>
+          </div>
+
+          <div class="card soon" tabindex="0" data-name="Regra de três">
+            <div class="card-top"><div class="icon">↔️</div><span class="badge">Em breve</span></div>
+            <h3>Regra de três</h3>
+            <p>Simples e composta, direta e inversa</p>
+          </div>
+
+          <div class="card soon" tabindex="0" data-name="MMC e MDC">
+            <div class="card-top"><div class="icon">🔗</div><span class="badge">Em breve</span></div>
+            <h3>MMC e MDC</h3>
+            <p>Mínimo múltiplo comum e máximo divisor</p>
+          </div>
+
+          <div class="card soon" tabindex="0" data-name="Números inteiros">
+            <div class="card-top"><div class="icon">±</div><span class="badge">Em breve</span></div>
+            <h3>Números inteiros</h3>
+            <p>Operações com números positivos e negativos</p>
+          </div>
+
+          <div class="card soon" tabindex="0" data-name="Razão e proporção">
+            <div class="card-top"><div class="icon">⚖️</div><span class="badge">Em breve</span></div>
+            <h3>Razão e proporção</h3>
+            <p>Grandezas, escalas e proporcionalidade</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ÁLGEBRA -->
+      <section class="category" data-cat="algebra">
+        <h2><span class="cat-dot" style="--c:#a855f7"></span>Álgebra</h2>
+        <div class="cards">
+          <div class="card soon" tabindex="0" data-name="Equações do 1º grau">
+            <div class="card-top"><div class="icon">🟰</div><span class="badge">Em breve</span></div>
+            <h3>Equações do 1º grau</h3>
+            <p>Isolamento de incógnitas e resolução</p>
+          </div>
+
+          <div class="card soon" tabindex="0" data-name="Equações do 2º grau">
+            <div class="card-top"><div class="icon">🔷</div><span class="badge">Em breve</span></div>
+            <h3>Equações do 2º grau</h3>
+            <p>Bhaskara, soma e produto das raízes</p>
+          </div>
+
+          <div class="card soon" tabindex="0" data-name="Sistemas de equações">
+            <div class="card-top"><div class="icon">🧩</div><span class="badge">Em breve</span></div>
+            <h3>Sistemas de equações</h3>
+            <p>Métodos de substituição e adição</p>
+          </div>
+
+          <div class="card soon" tabindex="0" data-name="Funções">
+            <div class="card-top"><div class="icon">📈</div><span class="badge">Em breve</span></div>
+            <h3>Funções</h3>
+            <p>Função afim, quadrática e gráficos</p>
+          </div>
+
+          <div class="card soon" tabindex="0" data-name="Potenciação e radiciação">
+            <div class="card-top"><div class="icon">√</div><span class="badge">Em breve</span></div>
+            <h3>Potenciação e radiciação</h3>
+            <p>Propriedades das potências e raízes</p>
+          </div>
+
+          <div class="card soon" tabindex="0" data-name="Produtos notáveis">
+            <div class="card-top"><div class="icon">📦</div><span class="badge">Em breve</span></div>
+            <h3>Produtos notáveis</h3>
+            <p>Quadrado da soma, diferença e mais</p>
+          </div>
+
+          <div class="card soon" tabindex="0" data-name="Fatoração">
+            <div class="card-top"><div class="icon">🔧</div><span class="badge">Em breve</span></div>
+            <h3>Fatoração</h3>
+            <p>Evidência, agrupamento e trinômios</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- GEOMETRIA -->
+      <section class="category" data-cat="geometria">
+        <h2><span class="cat-dot" style="--c:#28c76f"></span>Geometria</h2>
+        <div class="cards">
+          <div class="card soon" tabindex="0" data-name="Geometria plana">
+            <div class="card-top"><div class="icon">📐</div><span class="badge">Em breve</span></div>
+            <h3>Geometria plana</h3>
+            <p>Áreas e perímetros de figuras planas</p>
+          </div>
+
+          <div class="card soon" tabindex="0" data-name="Geometria espacial">
+            <div class="card-top"><div class="icon">🧊</div><span class="badge">Em breve</span></div>
+            <h3>Geometria espacial</h3>
+            <p>Volumes de sólidos geométricos</p>
+          </div>
+
+          <div class="card soon" tabindex="0" data-name="Trigonometria">
+            <div class="card-top"><div class="icon">📏</div><span class="badge">Em breve</span></div>
+            <h3>Trigonometria</h3>
+            <p>Seno, cosseno e tangente</p>
+          </div>
+
+          <div class="card soon" tabindex="0" data-name="Teorema de Pitágoras">
+            <div class="card-top"><div class="icon">🔺</div><span class="badge">Em breve</span></div>
+            <h3>Teorema de Pitágoras</h3>
+            <p>Relações no triângulo retângulo</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ESTATÍSTICA E PROBABILIDADE -->
+      <section class="category" data-cat="estatistica">
+        <h2><span class="cat-dot" style="--c:#ffb020"></span>Estatística e Probabilidade</h2>
+        <div class="cards">
+          <div class="card soon" tabindex="0" data-name="Estatística básica">
+            <div class="card-top"><div class="icon">📊</div><span class="badge">Em breve</span></div>
+            <h3>Estatística básica</h3>
+            <p>Média, mediana e moda</p>
+          </div>
+
+          <div class="card soon" tabindex="0" data-name="Probabilidade">
+            <div class="card-top"><div class="icon">🎲</div><span class="badge">Em breve</span></div>
+            <h3>Probabilidade</h3>
+            <p>Cálculo de chances e eventos</p>
+          </div>
+
+          <div class="card soon" tabindex="0" data-name="Análise combinatória">
+            <div class="card-top"><div class="icon">🔀</div><span class="badge">Em breve</span></div>
+            <h3>Análise combinatória</h3>
+            <p>Permutações, arranjos e combinações</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- AVANÇADO -->
+      <section class="category" data-cat="avancado">
+        <h2><span class="cat-dot" style="--c:#ec4899"></span>Tópicos avançados</h2>
+        <div class="cards">
+          <div class="card soon" tabindex="0" data-name="Progressões (PA e PG)">
+            <div class="card-top"><div class="icon">📶</div><span class="badge">Em breve</span></div>
+            <h3>Progressões (PA e PG)</h3>
+            <p>Sequências aritméticas e geométricas</p>
+          </div>
+
+          <div class="card soon" tabindex="0" data-name="Logaritmos">
+            <div class="card-top"><div class="icon">📉</div><span class="badge">Em breve</span></div>
+            <h3>Logaritmos</h3>
+            <p>Definição, propriedades e equações</p>
+          </div>
+
+          <div class="card soon" tabindex="0" data-name="Números complexos">
+            <div class="card-top"><div class="icon">🌐</div><span class="badge">Em breve</span></div>
+            <h3>Números complexos</h3>
+            <p>Operações e representação</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <div id="noResults" class="no-results hidden">
+      Nenhum tópico encontrado com "<span id="noResultsQuery"></span>"
+    </div>
+
+    <footer>
+      <p>Feito para estudar melhor 🚀</p>
+    </footer>
+
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
