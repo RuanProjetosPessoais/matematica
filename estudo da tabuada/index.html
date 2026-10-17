@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Tabuada Rápida — treino com cronômetro</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<div class="app">
+  <h1>Tabuada Rápida ⏱️</h1>
+  <p class="sub">Questões aleatórias, cronômetro por questão e registro completo de tempos.</p>
+
+  <!-- ============ CONFIGURAÇÃO ============ -->
+  <section id="setup" class="card">
+    <h2>1. Escolha as tabuadas</h2>
+    <div id="tables" class="chips"></div>
+
+    <div class="row">
+      <button class="btn" data-preset="all">Todas (1–10)</button>
+      <button class="btn" data-preset="none">Limpar</button>
+      <span class="grow"></span>
+      <label class="opt">Multiplicador até
+        <input type="number" id="maxB" value="10" min="1" max="12">
+      </label>
+    </div>
+
+    <div class="row">
+      <label class="opt">Meta por questão (s)
+        <input type="text" id="goalTime" inputmode="decimal" value="5" placeholder="0 = sem meta">
+      </label>
+    </div>
+
+    <button id="startBtn" class="btn primary" style="width:100%;padding:15px;font-size:16px">
+      Começar treino
+    </button>
+
+    <div id="history"></div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section id="quiz" class="card" style="display:none">
+    <div class="topbar">
+      <span id="progress">0 / 0</span>
+      <span id="timer">0,0s</span>
+      <button id="quitBtn" class="btn ghost">Encerrar</button>
+    </div>
+    <div class="progressbar"><div id="progressFill"></div></div>
+
+    <div class="question" id="question">— <span class="x">×</span> —</div>
+
+    <form id="answerForm" autocomplete="off">
+      <input id="answer" type="text" inputmode="numeric" placeholder="?" autocomplete="off" autocorrect="off" spellcheck="false">
+      <div class="row" style="margin:0;justify-content:center">
+        <button type="submit" class="btn primary" style="min-width:150px">Responder</button>
+        <button type="button" id="skipBtn" class="btn">Pular</button>
+      </div>
+    </form>
+
+    <div id="feedback" class="feedback"></div>
+    <div id="liveStats" class="stats"></div>
+  </section>
+
+  <!-- ============ RESULTADOS ============ -->
+  <section id="results" class="card" style="display:none">
+    <h2 id="resultsTitle">Resultado da sessão</h2>
+    <div class="summary" id="summary"></div>
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>Conta</th><th>Resposta</th><th>Tempo</th><th>Erros</th></tr>
+        </thead>
+        <tbody id="recordsBody"></tbody>
+      </table>
+    </div>
+    <div class="row" style="margin-top:18px">
+      <button id="againBtn" class="btn primary">Novo treino</button>
+      <button id="csvBtn" class="btn">Exportar CSV</button>
+    </div>
+  </section>
+</div>
+</body>
+</html>
